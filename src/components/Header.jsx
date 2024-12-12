@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header style={{ backgroundColor: '#6a5acd', padding: '10px', color: 'white' }}>
+    <header style={{ backgroundColor: '#6a5acd', color: 'white' }}>
       <h1>Loja de Resina</h1>
       <nav>
         <Link to="/" style={{ marginRight: '15px', color: 'white' }}>Home</Link>
