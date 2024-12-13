@@ -5,7 +5,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp'; // Importando o ícone 
 
 const Header = () => {
   // Número de WhatsApp
-  const phoneNumber = '55119957943031';
+  const phoneNumber = '5511957943031';
 
   const sendMessage = () => {
     const message = 'Olá, gostaria de mais informações.';
