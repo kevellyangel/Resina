@@ -8,9 +8,6 @@ const Home = () => {
       <Button variant="contained" color="primary" href="/store" style={{ margin: '10px' }}>
         Ver Loja
       </Button>
-      <Button variant="outlined" color="secondary" href="/contact" style={{ margin: '10px' }}>
-        Contato
-      </Button>
     </Container>
   );
 };
