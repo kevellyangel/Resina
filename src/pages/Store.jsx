@@ -7,7 +7,16 @@ const products = [
   { id: 3, name: 'Resina Poliuretano', image: 'https://via.placeholder.com/150', price: 'R$ 70,00' },
 ];
 
+// Número de WhatsApp em formato internacional (55 = Brasil, 84 = DDD, 99221-4343 = número)
+const phoneNumber = '5584992214343';
+
 const Store = () => {
+  const sendMessage = (productName) => {
+    const message = `Olá, gostaria de mais informações sobre o produto: ${productName}`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+  };
+
   return (
     <div style={{ padding: '20px' }}>
       <Typography variant="h3" gutterBottom style={{ textAlign: 'center' }}>
@@ -30,8 +39,13 @@ const Store = () => {
                   {product.price}
                 </Typography>
               </CardContent>
-              <Button variant="contained" color="primary" style={{ margin: '10px' }}>
-                Adicionar ao Carrinho
+              <Button
+                variant="contained"
+                color="success"
+                style={{ margin: '10px' }}
+                onClick={() => sendMessage(product.name)}
+              >
+                Consultar via WhatsApp
               </Button>
             </Card>
           </Grid>
