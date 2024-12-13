@@ -1,10 +1,10 @@
+// src/components/Header.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'; // Importando o ícone do WhatsApp
 
 const Header = () => {
-  // Número de WhatsApp
   const phoneNumber = '5511957943031';
 
   const sendMessage = () => {
